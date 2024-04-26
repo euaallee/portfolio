@@ -60,6 +60,11 @@
         padding: 1.2rem 3.6rem;
         border-radius: .6rem;
         border: none;
+        transition: opacity 0.3s ease-in-out;
 
+        &:hover {
+            background-color: #233d8b;
+            cursor: pointer;
+        }
     }
 }
