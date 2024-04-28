@@ -6,5 +6,21 @@
     padding: 0;
     box-sizing: border-box;
     font-size: 62.5%;
-    overflow-x: hidden;
+
+    &::-webkit-scrollbar {
+        width: .8rem;
+    }
+
+    &::-webkit-scrollbar-track {
+        background-color: #383838;
+    }
+
+    &::-webkit-scrollbar-thumb {
+        background-color: #4169e1;
+        border-radius: 2rem;
+
+        & {
+            border: .3rem solid white;
+        }
+    }
 }

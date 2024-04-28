@@ -1,0 +1,161 @@
+.redes {
+    margin-top: 16rem;
+    background-color: #111;
+    padding: 4rem;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    h1 {
+        margin-top: 3rem;
+        width: 25rem;
+        font-family: 'Ubuntu', sans-serif;
+        text-align: center;
+        font-size: 4rem;
+        font-weight: 500;
+        margin-bottom: 6rem;
+        padding-bottom: 2rem;
+        position: relative;
+        color: white;
+
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            width: 20rem;
+            height: .3rem;
+            background: #fff;
+            transform: translateX(-50%);
+        }
+
+        &::after {
+            content: "ache-me";
+            position: absolute;
+            bottom: -1.2rem;
+            left: 50%;
+            width: 8rem;
+            font-size: 2rem;
+            background: #111;
+            color: #4169e1;
+            padding: .5rem;
+            transform: translateX(-50%);
+        }
+    }
+
+    div {
+
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 3vw;
+
+        font-family: 'Roboto', sans-serif;
+
+        a {
+            text-decoration: none;
+            color: white;
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            width: 35rem;
+            height: 19rem;
+
+            @media (max-width: 1160px) {
+                width: 30vw;
+            }
+
+            background: #222;
+            text-align: center;
+            border-radius: .6rem;
+            margin-top: 2rem;
+            padding: 2rem 2.5rem;
+            transition: all 0.3s ease;
+
+            .rede {
+                width: 35rem;
+                height: 19rem;
+
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: space-evenly;
+
+                .hydrated {
+                    font-size: 7rem;
+                    color: #4169e1;
+                    transition: all 0.2s ease-in-out;
+                }
+
+                h3 {
+                    font-size: 2.5rem;
+                    font-weight: 500;
+                }
+
+                span {
+                    font-size: 1.8rem;
+                }
+
+                transition: transform 0.2s ease-in-out;
+
+                &:hover {
+                    transform: scale(1.1);
+                    color: white;
+                    cursor: pointer;
+
+                    .hydrated {
+                        color: #fff;
+
+                        .icon-inner {
+                            svg {
+                                path {
+                                    box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
+                                    -webkit-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
+                                    -moz-box-shadow: 0px 10px 50px 0px rgba(0, 0, 0, 0.5);
+                                }
+                            }
+                        }
+                    }
+
+                }
+            }
+
+            &:hover {
+                background-color: #4169e1;
+            }
+
+            &:visited {
+
+                text-decoration: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 1024px) {
+    .redes {
+        div {
+            grid-template-columns: auto auto;
+        }
+    }
+}
+
+@media (max-width: 425px) {
+    .redes {
+        div {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            a {
+                width: 35rem;
+                height: 19rem;
+            }
+        }
+    }
+}

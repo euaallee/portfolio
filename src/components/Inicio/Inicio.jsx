@@ -12,28 +12,31 @@ export default function Inicio() {
             <div className="display">
                 <p>Olá, me chamo</p>
                 <h1>Alexander Joshua</h1>
-                <span>sou
-                    <ReactTypingEffect
-                        className='typing'
-                        text={["Desenvolvedor  Web.", "Filmmaker.", "Social Midia."]}
-                        cursorRenderer={cursor => <span>{cursor}</span>}
-                        displayTextRenderer={(text, i) => {
-                            return (
-                                <span>
-                                    {text.split('').map((char, i) => {
-                                        const key = `${i}`;
-                                        return (
-                                            <span
-                                                key={key}
-                                                style={{ color: "#5c80ec" }}
-                                            >{char}</span>
-                                        );
-                                    })}
-                                </span>
-                            );
-                        }}
-                    />
-                </span>
+                <ReactTypingEffect
+                    staticText='sou'
+                    speed={150}
+                    eraseSpeed={100}
+                    typingDelay={1500}
+                    eraseDelay={1500}
+                    className='typing'
+                    text={["desenvolvedor  web.", "o menino da computação.", "filmmaker.", "social midia.", " o cara do TI."]}
+                    cursorRenderer={cursor => <span>{cursor}</span>}
+                    displayTextRenderer={(text, i) => {
+                        return (
+                            <span>
+                                {text.split('').map((char, i) => {
+                                    const key = `${i}`;
+                                    return (
+                                        <span
+                                            key={key}
+                                            style={{ color: "#5c80ec" }}
+                                        >{char}</span>
+                                    );
+                                })}
+                            </span>
+                        );
+                    }}
+                />
             </div>
             <button><Link to="" smooth={true} duration={800}>Contratar-me</Link></button>
 
