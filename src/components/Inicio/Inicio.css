@@ -1,5 +1,5 @@
 .inicio {
-    max-width: 100vw;
+    min-width: 100%;
     height: 100vh;
     min-height: 50rem;
     background-image: url(/img/banner.png);
@@ -70,36 +70,19 @@
     }
 }
 
-@media (max-width: 2560px) {
-    .inicio {
-        max-width: 100vw;
-        background-size: cover;
-        background-position: center;
-
-        .bgBlack {
-            position: absolute;
-            top: 0;
-            left: 0;
-            max-width: 100vw;
-            max-height: 100vh;
-            background: black;
-            opacity: 0.4;
-        }
-    }
-}
 
 @media (max-width: 1024px) {
     .inicio {
         background-position: -25rem -15rem;
-
+        
         .display {
             justify-content: center;
-
+            
             h1 {
                 width: 58vw;
                 font-size: clamp(3rem, 3rem + 4vw, 5rem);
             }
-
+            
             span {
                 font-size: 3rem;
             }
@@ -111,15 +94,15 @@
     .inicio {
         padding: 0 5rem;
         background-position: -45rem -15rem;
-
+        
         .display {
             justify-content: center;
-
+            
             h1 {
                 width: 58vw;
                 font-size: clamp(3rem, 3rem + 4vw, 4rem);
             }
-
+            
             span {
                 font-size: 3rem;
             }
@@ -135,21 +118,21 @@
         padding-bottom: 13rem;
         
         align-items: center;
-
+        
         .display {
             align-items: center;
             gap: 1rem;
-
+            
             p {
                 text-align: center;
             }
-
+            
             h1 {
                 width: 58vw;
                 font-size: clamp(3rem, 3rem + 4vw, 4rem);
                 text-align: center;
             }
-
+            
             span {
                 width: 35rem;
                 height: 6rem;
@@ -157,6 +140,24 @@
                 font-size: 3rem;
                 margin-bottom: 3rem;
             }
+        }
+    }
+}
+
+@media (max-width: 2560px) {
+    .inicio {
+        max-width: 100vw;
+        background-size: cover;
+        background-position: center;
+
+        .bgBlack {
+            position: absolute;
+            top: 0;
+            left: 0;
+            max-width: 100vw;
+            max-height: 100vh;
+            background: black;
+            opacity: 0.4;
         }
     }
 }

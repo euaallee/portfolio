@@ -144,6 +144,25 @@
     }
 }
 
+@media (max-width: 768px) {
+    .redes {
+        div {
+            display: flex;
+            flex-direction: column;
+
+            a {
+                width: 30rem;
+                height: 19rem;
+
+                .rede {
+                    width: 30rem;
+                    height: 19rem;
+                }
+            }
+        }
+    }
+}
+
 @media (max-width: 425px) {
     .redes {
         div {

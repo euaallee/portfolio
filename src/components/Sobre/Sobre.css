@@ -49,6 +49,8 @@
 
         img {
             width: 33rem;
+            object-fit: cover;
+            object-position: center;
             border-radius: 1rem;
         }
 
