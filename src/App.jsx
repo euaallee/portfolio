@@ -3,6 +3,7 @@ import Inicio from './components/Inicio/Inicio'
 import Sobre from './components/Sobre/Sobre'
 import RedesSociais from './components/RedesSociais/RedesSociais'
 import Espe from './components/Especialidades/Espe'
+import Expe from './components/Expe/Expe'
 
 import './App.css'
 
@@ -15,6 +16,7 @@ export default function App() {
             <Sobre id="sobre" />
             <RedesSociais id="redes" />
             <Espe id="espe" />
+            <Expe id="expe" />
         </>
     )
 }

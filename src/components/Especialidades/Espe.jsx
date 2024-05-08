@@ -36,7 +36,10 @@ export default function Espe() {
                     {
                         espeData.map(function (item) {
                             return (
-                                <Bars nameTech={item.nameTech} percentualTech={item.percentualTech} />
+                                <Bars
+                                    nameTech={item.nameTech}
+                                    percentualTech={item.percentualTech}
+                                />
                             )
                         })
                     }
